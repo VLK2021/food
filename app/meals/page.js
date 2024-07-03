@@ -5,6 +5,7 @@ import classes from './page.module.css';
 import MealsGrid from '../../components/meals/meals-grid';
 
 
+
 export default async function MealsPage() {
     const meals = await getMeals();
 
