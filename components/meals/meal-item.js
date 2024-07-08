@@ -11,6 +11,8 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     return (
         <article className={classes.meal}>
             <header>
+                <MealBtnDelete slug={slug}/>
+
                 <div className={classes.image}>
                     <Image src={image} alt={title} fill />
                 </div>
@@ -23,7 +25,6 @@ export default function MealItem({ title, slug, image, summary, creator }) {
                 <p className={classes.summary}>{summary}</p>
                 <div className={classes.actions}>
                     <Link href={`/meals/${slug}`}>View Details</Link>
-                    <MealBtnDelete slug={slug}/>
                 </div>
             </div>
         </article>

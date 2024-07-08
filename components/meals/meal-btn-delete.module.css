@@ -1,0 +1,14 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 100;
+    font-weight: bold;
+    background: linear-gradient(90deg, #f9572a, #ff9b05);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
