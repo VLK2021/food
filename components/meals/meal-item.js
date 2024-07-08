@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import classes from './meal-item.module.css';
+import MealBtnDelete from "@/components/meals/meal-btn-delete";
 
 
 export default function MealItem({ title, slug, image, summary, creator }) {
@@ -22,6 +23,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
                 <p className={classes.summary}>{summary}</p>
                 <div className={classes.actions}>
                     <Link href={`/meals/${slug}`}>View Details</Link>
+                    <MealBtnDelete slug={slug}/>
                 </div>
             </div>
         </article>

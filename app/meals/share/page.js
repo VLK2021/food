@@ -1,8 +1,8 @@
+import MealsFormSubmit from "@/components/meals/meals-form-submi";
 import ImagePicker from "@/components/meals/image-picker";
 import {shareMeal} from "@/lib/actions";
 
 import classes from './share.module.css';
-import MealsFormSubmit from "@/components/meals/meals-form-submi";
 
 
 export default function ShareMealPage() {
