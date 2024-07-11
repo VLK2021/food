@@ -1,10 +1,16 @@
 "use client"
 import { useFormState } from 'react-dom';
+
 import MealsFormSubmit from "@/components/meals/meals-form-submi";
 import ImagePicker from "@/components/meals/image-picker";
 import {shareMeal} from "@/lib/actions";
-
 import classes from './share.module.css';
+
+
+export const metadata = {
+    title: 'Share meal page',
+    description: 'Share your meals.',
+};
 
 
 export default function ShareMealPage() {
