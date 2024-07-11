@@ -7,11 +7,6 @@ import {shareMeal} from "@/lib/actions";
 import classes from './share.module.css';
 
 
-export const metadata = {
-    title: 'Share meal page',
-    description: 'Share your meals.',
-};
-
 
 export default function ShareMealPage() {
     const [state, formAction] = useFormState(shareMeal, { message: null });
