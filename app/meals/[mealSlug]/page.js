@@ -28,6 +28,7 @@ export default function MealDetailsPage({ params }) {
 
     meal.instructions = meal.instructions.replace(/\n/g, '<br />');
 
+
     return (
         <>
             <header className={classes.header}>
